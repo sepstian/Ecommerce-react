@@ -1,0 +1,1 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[521],{2515:function(e,i,t){"use strict";t.r(i);var _=t(0),n=t.n(_),c=t(1176),A=t(2465);i.default=({indexActive:e,items:i,onItemClick:t})=>n.a.createElement(c.a,{className:A.g,indexActive:e,items:i,onItemClick:t})}}]);
