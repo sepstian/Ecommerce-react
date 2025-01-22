@@ -140,7 +140,7 @@ const Header = (props) => {
                     <div className='container-fluid'>
                         <div className='row'>
                             <div className='col-sm-2 part1 d-flex align-items-center'>
-                                <Link to="/"><img style={{ height:"4rem" }} src={Logo} className='logo' /></Link>
+                                <Link to="/"><img style={{ height:"4rem", }} src={Logo} className='logo' /></Link>
                                 {
                                     windowWidth < 992 &&
                                     <div className='ml-auto d-flex align-items-center'>
@@ -268,25 +268,14 @@ const Header = (props) => {
                                         </ul>
                                     </ClickAwayListener>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </header>
-
-
                 <Nav data={props.data} openNav={isOpenNav} closeNav={closeNav} />
             </div>
 
-
-
-            
-
             <div className='afterHeader'></div>
-
-           
-
             {
                 isOpenAccDropDown !== false &&
                 <>
@@ -302,10 +291,6 @@ const Header = (props) => {
                 </ul>
                 </>
             }
-
-
-
-
         </>
     )
 }
