@@ -17,7 +17,7 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 
-import { ClickAwayListener } from '@mui/base/ClickAwayListener';
+import {ClickAwayListener} from '@mui/base';
 
 import Nav from './nav/nav';
 import { Link } from 'react-router-dom';

@@ -5,14 +5,18 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@mui/base": "^5.0.0-beta.69",
     "@mui/icons-material": "^5.16.14",
     "@mui/material": "^5.16.14",
     "@mui/styled-engine-sc": "^5.14.11",
+    "@mui/system": "^6.4.1",
     "@reduxjs/toolkit": "^2.5.0",
     "@stripe/react-stripe-js": "^3.1.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
     "axios": "^1.5.1",
     "bootstrap": "^5.3.3",
     "custom-react-inner-image-zoom": "^3.0.6",
@@ -38,7 +42,8 @@
     "start": "set PORT=3006 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean": "rimraf build && npm cache clean --force"
   },
   "eslintConfig": {
     "extends": [
