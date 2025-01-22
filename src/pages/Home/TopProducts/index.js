@@ -5,7 +5,7 @@ import img1 from '../../../assets/images/thumbnail-1.jpg';
 import img2 from '../../../assets/images/thumbnail-1.jpg';
 import img3 from '../../../assets/images/thumbnail-1.jpg';
 import { Link } from 'react-router-dom';
-import Rating from '@mui/material/Rating';
+import {Rating} from '@mui/material';
 
 const TopProducts = (props) => {
     return (

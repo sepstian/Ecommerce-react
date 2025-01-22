@@ -11,7 +11,7 @@ import IconHeart from '../../assets/images/icon-heart.svg';
 import IconCart from '../../assets/images/icon-cart.svg';
 import IconUser from '../../assets/images/icon-user.svg';
 
-import Button from '@mui/material/Button';
+import {Button} from '@mui/material';
 import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';

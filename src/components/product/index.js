@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import './style.css';
-import Rating from '@mui/material/Rating';
+import {Rating} from '@mui/material';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';

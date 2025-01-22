@@ -4,7 +4,7 @@ import './index.css';
 
 import Slide1 from '../../../assets/images/slider-1.png';
 import Slide2 from '../../../assets/images/slider-2.png';
-import Button from '@mui/material/Button';
+import {Button} from '@mui/material';
 
 import Newsletter from '../../../components/newsletter';
 

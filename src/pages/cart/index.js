@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
-import Rating from '@mui/material/Rating';
+import {Rating} from '@mui/material';
 import { Button } from '@mui/material';
 import QuantityBox from '../../components/quantityBox';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';

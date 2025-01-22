@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
+import {Box} from '@mui/material';
+import {TextField} from '@mui/material';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import { Button } from '@mui/material';
@@ -13,8 +13,8 @@ import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { app } from '../../firebase';
 
-import Backdrop from '@mui/material/Backdrop';
-import CircularProgress from '@mui/material/CircularProgress';
+import {Backdrop} from '@mui/material';
+import {CircularProgress} from '@mui/material';
 
 const auth = getAuth(app);
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import './nav.css';
 import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
+import {Button} from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import GridViewIcon from '@mui/icons-material/GridView';
 import HeadphonesOutlinedIcon from '@mui/icons-material/HeadphonesOutlined';

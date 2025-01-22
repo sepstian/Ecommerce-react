@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import Rating from '@mui/material/Rating';
+import {Rating} from '@mui/material';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import Slider from "react-slick";

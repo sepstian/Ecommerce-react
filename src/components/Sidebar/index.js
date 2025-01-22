@@ -1,15 +1,15 @@
 import React, { useEffect, useState, useContext } from 'react';
-import Slider from '@mui/material/Slider';
-import Checkbox from '@mui/material/Checkbox';
-import Radio from '@mui/material/Radio';
+import {Slider} from '@mui/material';
+import {Checkbox} from '@mui/material';
+import {Radio} from '@mui/material';
 import { Button } from '@mui/material';
 import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import bannerImg from '../../assets/images/banner1.jpg';
 import { Link, useParams } from 'react-router-dom';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
+import {RadioGroup} from '@mui/material';
+import {FormControlLabel} from '@mui/material';
+import {FormControl} from '@mui/material';
+import {FormLabel} from '@mui/material';
 
 import RangeSlider from 'react-range-slider-input';
 import 'react-range-slider-input/dist/style.css';
