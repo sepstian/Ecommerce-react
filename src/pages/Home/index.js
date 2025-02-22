@@ -174,11 +174,6 @@ const Home = (props) => {
                 </div>
             </section>
 
-
-
-
-
-
             <section className='homeProducts homeProductsRow2 pt-0'>
                 <div className='container-fluid'>
                     <div className='d-flex align-items-center'>

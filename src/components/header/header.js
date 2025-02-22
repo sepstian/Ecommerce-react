@@ -139,38 +139,36 @@ const Header = (props) => {
                 <header>
                     <div className='container-fluid'>
                         <div className='row'>
-                            <div className='col-sm-2 part1 d-flex align-items-center'>
-                                <Link to="/"><img src={Logo} className='logo' /></Link>
-                                {
-                                    windowWidth < 992 &&
-                                    <div className='ml-auto d-flex align-items-center'>
+                        <div className='col-sm-2 part1 d-flex align-items-center justify-content-between'>
+                            <Link to="/"><img src={Logo} className='logo' /></Link>
 
-
-                                        <div className='navbarToggle mr-0' onClick={openSearch}><SearchIcon /></div>
-                                        <ul className='list list-inline mb-0 headerTabs pl-0 mr-4'>
-
-                                            <li className='list-inline-item'>
-                                                <span>
-                                                    <Link to={'/cart'}> <img src={IconCart} />
-                                                        <span className='badge bg-success rounded-circle'>
-                                                            {dataCart.length}
-                                                        </span>
-                                                    </Link>
+                            {/* Bagian ini hanya muncul jika layar lebih kecil dari 992px */}
+                            {windowWidth < 992 && (
+                                <div className='d-flex align-items-center gap-3'>
+                                    <div className='navbarToggle' onClick={openSearch}><SearchIcon /></div>
+                                    
+                                    <ul className='list list-inline mb-0 headerTabs d-flex align-items-center gap-3'>
+                                        <li className='list-inline-item'>
+                                            <Link to={'/cart'}>
+                                                <img src={IconCart} />
+                                                <span className='badge bg-success rounded-circle'>
+                                                    {dataCart.length}
                                                 </span>
-                                            </li>
+                                            </Link>
+                                        </li>
+                                    </ul>
 
+                                    <div className='navbarToggle' onClick={openNav}><MenuIcon /></div>
 
-                                        </ul>
-                                        <div className='navbarToggle mr-2' onClick={openNav}><MenuIcon /></div>
-                                        {
-                                            context.isLogin === "true" &&
-                                            <div className='myAccDrop' onClick={() => setisOpenAccDropDown(!isOpenAccDropDown)}><PersonOutlineOutlinedIcon /></div>
-                                        }
+                                    {context.isLogin === "true" && (
+                                        <div className='myAccDrop' onClick={() => setisOpenAccDropDown(!isOpenAccDropDown)}>
+                                            <PersonOutlineOutlinedIcon />
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+                        </div>
 
-                                    </div>
-                                }
-
-                            </div>
 
                             {/*headerSearch start here */}
                             <div className='col-sm-5 part2'>
@@ -231,7 +229,7 @@ const Header = (props) => {
                                             </li>
 
                                             {
-                                                context.isLogin === "true" ?
+                                                // context.isLogin === "true" ?
 
                                                     <li className='list-inline-item'>
 
@@ -247,21 +245,16 @@ const Header = (props) => {
                                                                 <li><Button><LocationOnOutlinedIcon /> Order Tracking</Button></li>
                                                                 <li><Button><FavoriteBorderOutlinedIcon /> My Wishlist</Button></li>
                                                                 <li><Button><SettingsOutlinedIcon /> Setting</Button></li>
-                                                                <li><Button onClick={signOut}><LogoutOutlinedIcon /> Sign out</Button></li>
+                                                                {/* <li><Button onClick={signOut}><LogoutOutlinedIcon /> Sign out</Button></li> */}
                                                             </ul>
                                                         }
                                                     </li>
-
-                                                    :
-
-
-                                                    <li className='list-inline-item'>
-                                                        <Link to={'/signIn'}>
-                                                            <Button className="btn btn-g">Sign In</Button>
-                                                        </Link>
-                                                    </li>
-
-
+                                                    // :
+                                                    // <li className='list-inline-item'>
+                                                    //     <Link to={'/signIn'}>
+                                                    //         <Button className="btn btn-g">Sign In</Button>
+                                                    //     </Link>
+                                                    // </li>
                                             }
 
 
@@ -287,7 +280,7 @@ const Header = (props) => {
                     <li><Button><Link to=""><LocationOnOutlinedIcon /> Order Tracking</Link></Button></li>
                     <li><Button><Link to=""><FavoriteBorderOutlinedIcon /> My Wishlist</Link></Button></li>
                     <li><Button><Link to=""><SettingsOutlinedIcon /> Setting</Link></Button></li>
-                    <li><Button onClick={signOut}><Link to=""><LogoutOutlinedIcon /> Sign out</Link></Button></li>
+                    {/* <li><Button onClick={signOut}><Link to=""><LogoutOutlinedIcon /> Sign out</Link></Button></li> */}
                 </ul>
                 </>
             }

@@ -6,6 +6,11 @@
 .nav nav ul li button{text-transform: capitalize !important; padding: 21px 25px !important; color: #3bb77e !important; border-radius: 0px !important; }
 .nav nav ul li button a{text-decoration: none !important; color: rgba(0,0,0,0.8) !important;  font-size: 21px;}
 
+.row {
+    display: flex;
+  }
+  
+
 .nav .part3 .phNo svg{ font-size: 45px !important; opacity: 0.8;}
 .nav .part3 .phNo h3{ font-size:32px !important; line-height: 35px !important;}
 .nav .part3 .phNo p{ font-size: 16px !important; opacity: 0.8;}

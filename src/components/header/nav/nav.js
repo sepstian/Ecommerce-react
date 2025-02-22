@@ -46,11 +46,11 @@ const Nav = (props) => {
             }
             <div className={`nav d-flex align-items-center ${isOpenNav === true && 'click'}`}>
                 <div className='container-fluid'>
-                    <div className='row position-relative'>
-                        <div className='col-sm-2 part1 d-flex align-items-center'>
+                    <div className='row d-flex align-items-center justify-content-between'>
+                        {/* <div className='col-sm-2 part1 d-flex align-items-center'>
                             <Button className='bg-g text-white catTab res-hide'>
                                 <GridViewIcon /> &nbsp;Browse All Categories <KeyboardArrowDownIcon /></Button>
-                        </div>
+                        </div> */}
 
                         <div className='col-sm-8 part2 position-static'>
                             <nav className={isOpenNav === true ? 'open' : ''}>

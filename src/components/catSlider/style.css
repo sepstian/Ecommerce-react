@@ -3,7 +3,7 @@
 .cat_slider_Main .slick-list{padding-left: 25px !important;}
 .cat_slider_Main .item{ height: auto;  display: flex; align-items: center; justify-content: center; cursor: pointer;padding: 15px 0px; }
 
-.cat_slider_Main .item .info{margin: auto; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 15px; transition: all 0.3s ease-in-out; position: relative;}
+.cat_slider_Main .item .info{margin: auto; display: flex; text-align: center; align-items: center; justify-content: center; flex-direction: column; padding: 15px; transition: all 0.3s ease-in-out; position: relative;}
 
 .cat_slider_Main .item a{text-decoration: none;}
 .cat_slider_Main .item .info h5{font-weight: 600 !important; color: #000 !important; }

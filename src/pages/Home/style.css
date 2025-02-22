@@ -4,13 +4,20 @@
 .filterTab li a{color: #000; text-decoration: none; font-size: 20px; transition: all 0.3s ease-in-out; position: relative; font-weight: 600;}
 .filterTab li:hover a, .filterTab li a.act{color: #3bb77e !important; transform: translateY(-10px); }
 
+/* .homeProducts{ padding: 25px 0px; } */
+
 .homeProducts .productRow{ display: flex; padding: 30px 0px; margin: 0px -15px; flex-wrap: wrap;}
 .homeProducts .productRow.loading{opacity: 0.5; filter: blur(5px);}
 
 .homeProducts .productRow .item{width: 25%;  padding: 15px 15px;}
 .homeProductWrapper .productRow .item{width: 20%;}
 
-.homeProductsRow2 .prodSlider .item{padding:15px 5px;  padding-right: 25px  !important;}
+.homeProductsRow2 {padding: 10px 0;}
+.homeProductsRow2 img {max-height: 700px; object-fit: cover;}
+.homeProductsRow2 .prodSlider {max-height: 700px; overflow: hidden;}
+/* .homeProductsRow2 .prodSlider .item{padding:15px 5px;  padding-right: 25px  !important;} */
+.homeProductsRow2 .prodSlider .item {max-height: 350px; display: flex; padding-right: 25px; align-items: center;}
+
 
 
 .topProductsSection{padding: 35px 0px;}

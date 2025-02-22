@@ -23,9 +23,9 @@ const Cart = () => {
     const dataCart = useSelector((state) => state.cartSlice.cart);
 
     useEffect(() => {
-        if (context.isLogin !== "true") {
-            history('/signIn');
-        } 
+        // if (context.isLogin !== "true") {
+        //     history('/signIn');
+        // } 
        
 
         context.setCartItems(context.cartItems)

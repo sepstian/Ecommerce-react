@@ -166,28 +166,24 @@ function App() {
   return (
     
     data.productData.length !== 0 &&
-    <BrowserRouter>
-      <MyContext.Provider value={value}>
-        {
-          isLoading===true && <div className='loader'><img src={Loader}/></div>
-        }
-
-        
-        <Header data={data.productData} />
-        <Routes>
-          <Route exact={true} path="/" element={<Home data={data.productData} />} />
-          <Route exact={true} path="/cat/:id" element={<Listing data={data.productData} single={true} />} />
-          <Route exact={true} path="/cat/:id/:id" element={<Listing data={data.productData} single={false} />} />
-          <Route exact={true} path="/product/:id" element={<DetailsPage data={data.productData} />} />
-          <Route exact={true} path="/cart" element={<Cart />} />
-          <Route exact={true} path="/signIn" element={<SignIn />} />
-          <Route exact={true} path="/signUp" element={<SignUp />} />
-          <Route exact={true} path="/checkout" element={<Checkout />} />
-          <Route exact={true} path="*" element={<NotFound />} />
-        </Routes>
-       <Footer/>
-      </MyContext.Provider>
-    </BrowserRouter>
+    <MyContext.Provider value={value}>
+      {
+        isLoading===true && <div className='loader'><img src={Loader}/></div>
+      }
+      <Header data={data.productData} />
+      <Routes>
+        <Route exact={true} path="/" element={<Home data={data.productData} />} />
+        <Route exact={true} path="/cat/:id" element={<Listing data={data.productData} single={true} />} />
+        <Route exact={true} path="/cat/:id/:id" element={<Listing data={data.productData} single={false} />} />
+        <Route exact={true} path="/product/:id" element={<DetailsPage data={data.productData} />} />
+        <Route exact={true} path="/cart" element={<Cart />} />
+        <Route exact={true} path="/signIn" element={<SignIn />} />
+        <Route exact={true} path="/signUp" element={<SignUp />} />
+        <Route exact={true} path="/checkout" element={<Checkout />} />
+        <Route exact={true} path="*" element={<NotFound />} />
+      </Routes>
+      <Footer/>
+    </MyContext.Provider>
   );
 }
 
