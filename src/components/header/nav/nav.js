@@ -168,7 +168,7 @@ const Nav = (props) => {
                                     </li>
                                 </ul>
 
-                                {
+                                {/* {
                                     windowWidth < 992 &&
                                     <>
                                     {
@@ -182,7 +182,7 @@ const Nav = (props) => {
                                     }
                                        
                                     </>
-                                }
+                                } */}
 
                             </nav>
                         </div>

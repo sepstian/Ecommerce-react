@@ -10,6 +10,17 @@ footer p, footer a{font-size: 18px;}
 
 footer{padding: 60px 0px; padding-bottom: 0px;}
 
+.part1 {
+    display: block; 
+}
+
+@media (max-width: 992px) { /* Untuk layar lebih kecil dari 992px */
+    .part1 {
+        display: flex;
+        gap: 10px;
+    }
+}
+
 footer .part1 svg{color: #3bb77e  !important;}
 
 footer  h3{color: #000; font-weight: 600; margin-bottom: 20px;}

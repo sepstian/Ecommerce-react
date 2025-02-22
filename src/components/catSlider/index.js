@@ -78,13 +78,13 @@ const CatSlider = (props) => {
                             allData.map((item, index) => {
                                 return (
                                     <div className='item' key={index} >
-                                        <Link to={`/cat/${item.cat_name.toLowerCase()}`}>
+                                        <a href={`/cat/${item.cat_name.toLowerCase()}`}>
                                             <div className='info' style={{ background: itemBg[index] }}>
                                                 <img src={item.image} width="80" />
                                                 <h5 className='text-capitalize mt-3'>{item.cat_name}</h5>
                                                 <p>{totalLength[index]} items</p>
                                             </div>
-                                        </Link>
+                                        </a>
 
                                     </div>
                                 )

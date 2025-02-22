@@ -59,9 +59,6 @@ const Home = (props) => {
     }, [])
 
 
-
-
-
     useEffect(() => {
         var arr = [];
         setActiveTabData(arr);

@@ -276,7 +276,7 @@ const Header = (props) => {
                 <ul className='dropdownMenu dropdownMenuAcc' onClick={closeNav}>
                     <li><Button className='align-items-center'><Link to=""><Person2OutlinedIcon /> My Account</Link></Button></li>
                     <li><Button className='align-items-center'><Link to=""> <img src={IconCompare} />Compare</Link></Button></li>
-                    <li><Button className='align-items-center'><Link to=""> <img src={IconCart} />Cart</Link></Button></li>
+                    <li><Button className='align-items-center'><Link to={'/cart'}> <img src={IconCart} />Cart</Link></Button></li>
                     <li><Button><Link to=""><LocationOnOutlinedIcon /> Order Tracking</Link></Button></li>
                     <li><Button><Link to=""><FavoriteBorderOutlinedIcon /> My Wishlist</Link></Button></li>
                     <li><Button><Link to=""><SettingsOutlinedIcon /> Setting</Link></Button></li>
