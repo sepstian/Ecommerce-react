@@ -32,7 +32,7 @@ const Cart = () => {
     // if (context.isLogin !== "true") {
     //     history('/signIn');
     // }
-
+    window.scrollTo(0, 0);
     context.setCartItems(context.cartItems);
   }, []);
 
