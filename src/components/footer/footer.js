@@ -109,7 +109,7 @@ const Footer = () => {
                 <footer>
                     <div className='container-fluid'>
                         <div className='row'>
-                            <div className='col-md-3 part1'>
+                            <div className='col-md-3 part1' >
                                 <Link to='/'><img style={{ height:"4rem" }} src={Logo} /></Link>
                                 <br /><br />
                                 <p>Awesome grocery store website template</p>
@@ -119,9 +119,7 @@ const Footer = () => {
                                 <p><HeadphonesOutlinedIcon /> <strong>Call Us:</strong> (+62) 895***** </p>
                                 <p><EmailOutlinedIcon /> <strong>Email:</strong> ***@gmail.com</p>
                                 <p><WatchLaterOutlinedIcon /> <strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
-
                             </div>
-
 
                             <div className='col-md-6 part2'>
                                 <div className='row'>

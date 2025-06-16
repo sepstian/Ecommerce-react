@@ -21,6 +21,13 @@ footer{padding: 60px 0px; padding-bottom: 0px;}
     }
 }
 
+@media (max-width: 600px) { 
+    .part1 {
+        display: block;
+        gap: 10px;
+    }
+}
+
 footer .part1 svg{color: #3bb77e  !important;}
 
 footer  h3{color: #000; font-weight: 600; margin-bottom: 20px;}
