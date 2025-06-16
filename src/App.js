@@ -39,6 +39,27 @@ function App() {
   const [isOpenFilters, setIsopenFilters] = useState(false);
   const [cartTotalAmount, setCartTotalAmount] = useState();
 
+  useEffect(() => {
+  const is_Login = localStorage.getItem('isLogin');
+  setIsLogin(is_Login);
+
+  // ⬅️ Ambil cart dari localStorage jika ada
+  const savedCart = localStorage.getItem("cart");
+  if (savedCart) {
+    dispatch(update_cart(JSON.parse(savedCart)));
+  }
+
+  setTimeout(() => {
+    setProductData(data[1]);
+    setIsloading(false);
+  }, 3000);
+}, []);
+
+useEffect(() => {
+  // ⬅️ Simpan cart ke localStorage setiap kali berubah
+  localStorage.setItem("cart", JSON.stringify(dataCart.cart));
+}, [dataCart.cart]);
+
   
   useEffect(() => {
     // getData('http://localhost:5000/productData');
